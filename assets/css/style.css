@@ -75,6 +75,10 @@ h6 {
   .back-to-top {
     bottom: 15px;
   }
+
+  .pd-img img {
+    width: 80vw !important;
+  }
 }
 
 .back-to-top:focus {
@@ -146,18 +150,16 @@ h6 {
   background: white;
 }
 
+#header .container {
+  max-width: 100%;
+}
+
 @media (max-width: 991px) {
   #header {
     background: rgba(6, 12, 34, 0.98);
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
-  }
-}
-
-@media (max-width: 1199px) {
-  #header .container {
-    max-width: 100%;
   }
 }
 
@@ -193,6 +195,40 @@ h6 {
   padding: 0;
   margin: 0;
   max-height: 40px;
+}
+
+.scit-logo {
+  width: 200px;
+  height: auto;
+}
+
+.event-logo {
+  width: 100px;
+  height: auto;
+  margin-left: 15px !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .scit-logo {
+    width: 130px;
+    height: auto;
+  }
+
+  .sproutlogo {
+    width: 350px !important;
+  }
+
+  #intro {
+    height: 135vh !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #intro {
+    height: 160vh !important;
+  }
+  .sproutlogo {
+    width: 310px !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -483,8 +519,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
-  height: 120vh;
-  background: url(../iTELF_LOGO/background.jpeg) center;
+  height: 145vh;
+
+  background: url(../iTELF_LOGO/tips-veteran-entrepreneurs.jpg) center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -498,7 +535,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  /* background: rgba(6, 12, 34, 0.8); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -723,13 +760,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #speakers {
   padding: 60px 0 30px 0;
-  background-color: rgba(16, 16, 20, 0.911);
+  background-color: #16213e;
 }
 
 #speakers .speaker {
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin: 0 50px 60px 50px;
 }
 
 #speakers .speaker .details {
@@ -813,6 +850,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #112363;
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  #speakers .speaker {
+    margin: 0 0px 40px 0px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1031,7 +1074,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .owl-dot {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 3px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1060,6 +1103,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
+  background-color: #16213e;
 }
 
 #supporters .supporters-wrap {
@@ -1076,7 +1120,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
+  background-color: #16213e;
   height: 160px;
 }
 
@@ -1300,14 +1345,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  /* background: #101522; */
+  background: rgba(6, 12, 34, 0.98);
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  /* background: #040919; */
+  background: rgba(6, 12, 34, 0.98);
   padding: 60px 0 30px 0;
 }
 
@@ -1336,6 +1383,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
+}
+
+#footer .footer-top .social-links {
+  text-align: center;
 }
 
 #footer .footer-top .social-links a {
@@ -1370,6 +1421,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1401,8 +1453,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #f82249;
 }
 
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+.footer-contact {
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1445,6 +1498,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ddd;
 }
 
+.copfot {
+  background: rgba(6, 12, 34, 0.98);
+}
+
 /* sponsor section */
 /* Slider */
 .owl-carousel .owl-item img {
@@ -1452,11 +1509,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
 }
 
-.speaker {
-  margin-bottom: 50px;
-}
 .speaker .name-right {
-  left: -80px;
+  left: 50px;
   position: relative;
   color: rgb(218, 136, 14) !important;
 }
@@ -1479,6 +1533,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   .img-e {
     float: left;
   }
+
+  .img-fluid {
+    height: 310px !important;
+  }
 }
 
 .img-fluid {
@@ -1488,4 +1546,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .bio p {
   color: white;
+}
+
+#paneld {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.pd-img {
+  text-align: center;
+}
+
+.pd-img img {
+  border: 2px #112363 solid;
+  width: 60vw;
+  height: auto;
 }
